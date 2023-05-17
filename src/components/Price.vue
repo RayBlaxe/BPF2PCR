@@ -1,12 +1,13 @@
 <template>
   <span>
     {{
-      this.prefix + Number.parseFloat(this.value).toFixed(this.precission) 
+      this.prefix + Number.parseFloat(this.value).toFixed(this.precission)
     }}</span
   >
 </template>
 <script>
 export default {
+  name: "PriceItem",
   props: {
     value: {
       type: Number,
